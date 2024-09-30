@@ -1,46 +1,39 @@
-## Allora Worker Node x Reputer 
+## Allora Worker x Reputer This modify with compatible CPU mode, but you can setup for your handling!!! 
 
 ## 1. Clone the code from this repository
 
 ```bash
-git clone https://github.com/0xtnpxsgt/allora-worker-x-reputer.git
-cd allora-worker-x-reputer
+git clone https://github.com/arcxteam/allora-cpu.git
+cd allora-cpu
 ```
 
-## 2. Install Docker and necessary libraries
+## 2. Install Docker and necessary libraries (optional)
 
 ```bash
 chmod +x init.sh
 ./init.sh
 ```
 
-## 3. Proceed with the faucet
-- Note if you are using old wallet please proceed to step 4
-- Go to the link and paste the Allora wallet address in the format allo1jzvjewf0..https://faucet.testnet-1.testnet.allora.network/
+## 3. Setup Preparation
+- Run the worker - directory
+- Setting wallet & phrase or manual config.json
+- Setting docker-compose.yaml & docker-compose-reputer.yaml =>> Coingecko API=CG-xxxxx
 
-
-
-## 4. Setup Preparation
-- Run the worker => wait until it reports success, then it’s done.
 ```bash
-cd allora-node
+cd allora-cpu/allora-node
 ```
 
-- If this is your first time, enter the command below, providing the wallet_name, mnemonic - seed phrase of the wallet, and cgc_api_key - API key obtained from CoinGecko
-- Register on Coingecko https://www.coingecko.com/en/developers/dashboard & Create Demo API KEY
 ```bash
 chmod +x ./init.config.sh
 ./init.config.sh "wallet_name" "mnemonic" "cgc_api_key"
-# example: ./init.config.sh "MysticWho" "gospel guess idle vessel motor step xxx xxx xxx xxx xxx xxx" "GC-xxxxxx"
 ```
+- example: chmod +x ./init.config.sh
+./init.config.sh "MysticWho" "gospel guess idle vessel motor step xxx xxx xxx xxx xxx xxx" "GC-xxxxxx"
 
-## 5. Upgrade
+## 5. Upgrade & Build Your Worker
 ```bash
 docker compose pull
 ```
-
-
-## 5. Build Your Worker Node
 ```bash
 docker compose up --build -d 
 ```
@@ -54,8 +47,11 @@ docker compose logs -f
 
 
 ## Now if you want to have your own unique model
-- Play with the train_models.py file
-- to edit run command 
+
+- Run Command below!!
+- Buidl with the train_models.py file
+- To edit for the best your model & run
+- Save model (ctrl X + Y) save ENTER
 
 ```bash
 nano train_models.py 
@@ -63,11 +59,36 @@ nano train_models.py
 
 ## How to train the model?
 
-- Run Command
+- Run Command below!!
 ```bash
 chmod +x ./start-train-model.sh
 ./start-train-model.sh
 ```
+
+## How to check train the model?
+
+- Run Command below!!
+- Copied of CONTAINER ID
+- docker logs -f xxxxxxxxxx
+- Enter & check logs
+  
+```bash
+sudo docker ps
+```
+
+```bash
+docker logs -f 
+```
+Check your IMAGES like: allora-train-model:1.0.0
+
+![Capture555554-09-30-2024_05_07_PM](https://github.com/user-attachments/assets/f415427e-a8f4-49cd-8d50-60a9df5b7113)
+
+## Train model in ranges 30-60 Minutes!! plz keep until success
+- Check logs for training horizon symbol
+- 10 Minutues & 20 Minutes & 1440 Minutes
+- The container of training will exited auto after complete
+
+
 
 
 ###### Thanks to hiephtdev 
