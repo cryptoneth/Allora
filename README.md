@@ -25,12 +25,12 @@ cd allora-cpu/allora-node
 
 ```bash
 chmod +x ./init.config.sh
-./init.config.sh "wallet_name" "mnemonic" "cgc_api_key"
+./init.config.sh "wallet_name" "mnemonic" "coingecko_api_key"
 ```
 - example: chmod +x ./init.config.sh
-./init.config.sh "MysticWho" "gospel guess idle vessel motor step xxx xxx xxx xxx xxx xxx" "GC-xxxxxx"
+./init.config.sh "bangsat-kau" "kalo pake model sendiri pasti dapat point xxx xxx" "CG-xxxxxx"
 
-## 5. Upgrade & Build Your Worker
+## 4. Upgrade & Build Your Worker
 ```bash
 docker compose pull
 ```
@@ -46,31 +46,31 @@ docker compose logs -f
 ---------------------------------------- Congrats Your Setup is Completed -------------------------------------
 
 
-## Now if you want to have your own unique model
+## 1. Now if you want to have your own unique model
 
-- Run Command below!!
+- Run command below!!
 - Buidl with the train_models.py file
-- To edit for the best your model & run
-- Save model (ctrl X + Y) save ENTER
+- To edit for the best your 'own model' and run
+- Save the model (ctrl X + Y) save ENTER
 
 ```bash
 nano train_models.py 
 ```
 
-## How to train the model?
+## 2. How to train the model?
 
-- Run Command below!!
+- Run command below!!
 ```bash
 chmod +x ./start-train-model.sh
 ./start-train-model.sh
 ```
 
-## How to check train the model?
+## 3. How to check train the model?
 
-- Run Command below!!
+- Run docker command!!
 - Copied of CONTAINER ID
 - docker logs -f xxxxxxxxxx
-- Enter & check logs
+- Enter and check the logs
   
 ```bash
 sudo docker ps
@@ -79,16 +79,17 @@ sudo docker ps
 ```bash
 docker logs -f 
 ```
-Check your IMAGES like: allora-train-model:1.0.0
+
+## 4. Training the model in ranges 30-60 Minutes!! plz keep until success
+
+- Check your IMAGES run as 'allora-train-model:1.0.0'
+- Check logs for training horizon symbol
+- 10 Minutues & 20 Minutes & 1440 Minutes
+- The containerID with train will be exited auto after complete 
 
 ![Capture555554-09-30-2024_05_07_PM](https://github.com/user-attachments/assets/f415427e-a8f4-49cd-8d50-60a9df5b7113)
 
-## Train model in ranges 30-60 Minutes!! plz keep until success
-- Check logs for training horizon symbol
-- 10 Minutues & 20 Minutes & 1440 Minutes
-- The container of training will exited auto after complete
 
 
 
-
-###### Thanks to hiephtdev 
+###### Thanks to hiephtdev & 0xtnpxsgt
