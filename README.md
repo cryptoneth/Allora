@@ -1,6 +1,6 @@
-## Allora Worker x Reputer This modify with compatible CPU mode, but you can setup for your handling!!! 
+## Allora Worker x Reputer as modify with compatible CPU mode, but you can setup with your handle!!! 
 
-## 1. Clone the code from this repository
+## 1. Cloning code from this repository
 
 ```bash
 git clone https://github.com/arcxteam/allora-cpu.git
@@ -38,7 +38,7 @@ docker compose pull
 docker compose up --build -d 
 ```
 
-Check Logs to Make Sure its Running
+- Check logs as to running
 ```bash
 docker compose logs -f 
 ```
