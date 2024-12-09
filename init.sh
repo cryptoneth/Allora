@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# cài đặt jq
 sudo apt-get update && apt-get -y install jq
 
-# Kiểm tra xem Docker đã được cài đặt chưa
 if command -v docker &> /dev/null
 then
     echo "Docker đã được cài đặt."
