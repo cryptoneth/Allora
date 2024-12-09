@@ -4,7 +4,8 @@
         "addressRestoreMnemonic": "what-the-fuck",
         "alloraHomeDir": "",
         "gas": "auto",
-        "gasAdjustment": 1.5,
+        "gasAdjustment": 2,
+        "gasPrices": "10",
         "nodeRpc": "https://rpc.ankr.com/allora_testnet",
         "maxRetries": 7,
         "retryDelay": 3,
@@ -14,7 +15,7 @@
     "worker": [
         {
             "topicId": 1,
-            "inferenceEntrypointName": "api-worker-reputer",
+            "inferenceEntrypointName": "apiAdapter",
             "loopSeconds": 5,
             "parameters": {
                 "InferenceEndpoint": "http://source-01:8001/inference/{Token}",
@@ -23,7 +24,7 @@
         },
         {
             "topicId": 3,
-            "inferenceEntrypointName": "api-worker-reputer",
+            "inferenceEntrypointName": "apiAdapter",
             "loopSeconds": 5,
             "parameters": {
                 "InferenceEndpoint": "http://source-01:8001/inference/{Token}",
@@ -32,7 +33,7 @@
         },
         {
             "topicId": 5,
-            "inferenceEntrypointName": "api-worker-reputer",
+            "inferenceEntrypointName": "apiAdapter",
             "loopSeconds": 5,
             "parameters": {
                 "InferenceEndpoint": "http://source-01:8001/inference/{Token}",
@@ -41,7 +42,7 @@
         },
         {
             "topicId": 2,
-            "inferenceEntrypointName": "api-worker-reputer",
+            "inferenceEntrypointName": "apiAdapter",
             "loopSeconds": 5,
             "parameters": {
                 "InferenceEndpoint": "http://source-03:8003/inference/{Token}",
@@ -50,7 +51,7 @@
         },
         {
             "topicId": 7,
-            "inferenceEntrypointName": "api-worker-reputer",
+            "inferenceEntrypointName": "apiAdapter",
             "loopSeconds": 5,
             "parameters": {
                 "InferenceEndpoint": "http://source-02:8002/inference/{Token}",
@@ -59,7 +60,7 @@
         },
         {
             "topicId": 8,
-            "inferenceEntrypointName": "api-worker-reputer",
+            "inferenceEntrypointName": "apiAdapter",
             "loopSeconds": 5,
             "parameters": {
                 "InferenceEndpoint": "http://source-02:8002/inference/{Token}",
@@ -68,7 +69,7 @@
         },
         {
             "topicId": 9,
-            "inferenceEntrypointName": "api-worker-reputer",
+            "inferenceEntrypointName": "apiAdapter",
             "loopSeconds": 5,
             "parameters": {
                 "InferenceEndpoint": "http://source-02:8002/inference/{Token}",
@@ -79,7 +80,7 @@
     "reputer": [
         {
             "topicId": 1,
-            "reputerEntrypointName": "api-worker-reputer",
+            "reputerEntrypointName": "apiAdapter",
             "loopSeconds": 30,
             "minStake": 100000,
             "parameters": {
@@ -89,7 +90,7 @@
         },
         {
             "topicId": 3,
-            "reputerEntrypointName": "api-worker-reputer",
+            "reputerEntrypointName": "apiAdapter",
             "loopSeconds": 30,
             "minStake": 100000,
             "parameters": {
@@ -99,7 +100,7 @@
         },
         {
             "topicId": 5,
-            "reputerEntrypointName": "api-worker-reputer",
+            "reputerEntrypointName": "apiAdapter",
             "loopSeconds": 30,
             "minStake": 100000,
             "parameters": {
@@ -109,7 +110,7 @@
         },
         {
             "topicId": 2,
-            "reputerEntrypointName": "api-worker-reputer",
+            "reputerEntrypointName": "apiAdapter",
             "loopSeconds": 30,
             "minStake": 100000,
             "parameters": {
@@ -119,7 +120,7 @@
         },
         {
             "topicId": 7,
-            "reputerEntrypointName": "api-worker-reputer",
+            "reputerEntrypointName": "apiAdapter",
             "loopSeconds": 30,
             "minStake": 100000,
             "parameters": {
@@ -129,7 +130,7 @@
         },
         {
             "topicId": 8,
-            "reputerEntrypointName": "api-worker-reputer",
+            "reputerEntrypointName": "apiAdapter",
             "loopSeconds": 30,
             "minStake": 100000,
             "parameters": {
@@ -139,7 +140,7 @@
         },
         {
             "topicId": 9,
-            "reputerEntrypointName": "api-worker-reputer",
+            "reputerEntrypointName": "apiAdapter",
             "loopSeconds": 30,
             "minStake": 100000,
             "parameters": {
