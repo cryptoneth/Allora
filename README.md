@@ -3,7 +3,7 @@
 ## 1. Cloning code from this repository
 
 ```bash
-git clone https://github.com/cryptoneth/allora-cpu.git
+git clone https://github.com/cryptoneth/Allora.git
 cd allora-cpu
 ```
 
