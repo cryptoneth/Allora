@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/cryptoneth/Allora.git
-cd allora-cpu
+cd Allora
 ```
 
 ## 2. Install Docker and necessary libraries (optional)
